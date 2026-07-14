@@ -119,12 +119,12 @@ const companyRequisites = {
       ["Наименование", "ТОО «Reliable Company»"],
       ["БИН", "190 140 026 975"],
       ["Директор", "Фукс Надежда Сергеевна"],
-      ["Юр. адрес", "РК, г. Караганда, ул. Московская, стр. 4"],
+      ["Юр. адрес", "г. Караганда, мкр. Степной-3, д. 10/1"],
       ["ИИК", "KZ69 8562 2031 0588 3642"],
       ["Банк", "КФ АО «Банк ЦентрКредит»"],
       ["БИК", "KCJBKZKX"],
       ["Телефон", "+7 (778) 944 52 60"],
-      ["E-mail", "reliable19com@mail.ru"],
+      ["E-mail", "reliable19com@mail.com"],
       ["Лицензия ПБ", "Гос. разрешение на экспертизу ПБ (МЧС РК)"],
       ["Изыскания", "Гос. лицензия №20009604"],
     ]
@@ -414,9 +414,9 @@ function Index() {
                         <div className="text-xs text-muted-foreground mb-1">Телефон</div>
                         <div className="font-display text-2xl group-hover:text-primary transition">+7 (778) 944 52 60</div>
                       </a>
-                      <a href="mailto:reliable19com@mail.ru" className="block group">
+                      <a href="mailto:reliable19com@mail.com" className="block group">
                         <div className="text-xs text-muted-foreground mb-1">E-mail</div>
-                        <div className="font-display text-lg group-hover:text-primary transition break-all">reliable19com@mail.ru</div>
+                        <div className="font-display text-lg group-hover:text-primary transition break-all">reliable19com@mail.com</div>
                       </a>
                     </div>
                     <div className="space-y-4">
@@ -436,8 +436,8 @@ function Index() {
                 <div className="border-t border-b border-border py-6">
                   <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">Адрес офиса</div>
                   <div className="font-display text-2xl leading-tight">
-                    г. Караганда, ул. Московская, стр. 4<br />
-                    <span className="text-muted-foreground text-lg">Республика Казахстан, 100019 (ТОО BuildEngineeringGroup: офис 32)</span>
+                    г. Караганда, ул. Московская, 4, оф. 32<br />
+                    <span className="text-muted-foreground text-lg">ТОО «Reliable Company»: мкр. Степной-3, д. 10/1</span>
                   </div>
                 </div>
               </div>
