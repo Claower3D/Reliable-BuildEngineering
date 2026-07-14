@@ -16,28 +16,6 @@ export const Route = createFileRoute("/")({
 const services = [
   {
     n: "01",
-    title: "Инженерные изыскания",
-    img: surveyImg,
-    items: [
-      "Инженерно-геологические изыскания",
-      "Инженерно-геодезические и топографические работы",
-      "Инженерно-гидрогеологические изыскания",
-      "Инженерно-геофизические исследования",
-    ],
-  },
-  {
-    n: "02",
-    title: "Проектирование (I категория)",
-    img: designImg,
-    items: [
-      "Проектирование технологической части проектов",
-      "Проектирование инженерных систем (электроснабжение, отопление, вентиляция)",
-      "Архитектурное и строительное проектирование",
-      "Разработка генпланов и перспективной застройки",
-    ],
-  },
-  {
-    n: "03",
     title: "Строительно-монтажные работы (II категория)",
     img: constructionImg,
     items: [
@@ -48,18 +26,18 @@ const services = [
     ],
   },
   {
-    n: "04",
-    title: "Техническое обследование зданий",
-    img: inspectionBuildingImg,
+    n: "02",
+    title: "Инженерные изыскания",
+    img: surveyImg,
     items: [
-      "Обследование надежности и устойчивости зданий и сооружений",
-      "Экспертные работы на сложных объектах I и II уровней ответственности",
-      "Комплексная оценка строительных конструкций и фундаментов",
-      "Выявление дефектов и разработка рекомендаций по эксплуатации",
+      "Инженерно-геологические изыскания",
+      "Инженерно-геодезические и топографические работы",
+      "Инженерно-гидрогеологические изыскания",
+      "Инженерно-геофизические исследования",
     ],
   },
   {
-    n: "05",
+    n: "03",
     title: "Промышленная безопасность",
     img: inspectionImg,
     items: [
@@ -67,6 +45,28 @@ const services = [
       "Экспертиза технических устройств (в т.ч. грузоподъемных и сосудов)",
       "Экспертиза технологий и технической документации",
       "Наружный и внутренний осмотр, гидравлические испытания сосудов",
+    ],
+  },
+  {
+    n: "04",
+    title: "Проектирование (I категория)",
+    img: designImg,
+    items: [
+      "Проектирование технологической части проектов",
+      "Проектирование инженерных систем (электроснабжение, отопление, вентиляция)",
+      "Архитектурное и строительное проектирование",
+      "Разработка генпланов и перспективной застройки",
+    ],
+  },
+  {
+    n: "05",
+    title: "Техническое обследование зданий",
+    img: inspectionBuildingImg,
+    items: [
+      "Обследование надежности и устойчивости зданий и сооружений",
+      "Экспертные работы на сложных объектах I и II уровней ответственности",
+      "Комплексная оценка строительных конструкций и фундаментов",
+      "Выявление дефектов и разработка рекомендаций по эксплуатации",
     ],
   },
   {
@@ -150,7 +150,7 @@ const companyRequisites = {
 };
 
 function Index() {
-  const [activeCompany, setActiveCompany] = useState<"reliable" | "buildEngineering" >("reliable");
+  const [activeCompany, setActiveCompany] = useState<"reliable" | "buildEngineering" >("buildEngineering");
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -161,11 +161,10 @@ function Index() {
             <img src={logoImg} alt="Reliable & BuildEngineering Logo" className="w-8 h-8 object-contain" />
             <div className="leading-tight">
               <div className="font-display text-base tracking-tight flex items-center gap-1.5">
-                <span>Reliable</span>
-                <span className="text-primary font-light">&</span>
-                <span>BuildEngineering</span>
+                <span>Build Engineering</span>
+                <span className="text-primary font-light">Group</span>
               </div>
-              <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Группа компаний · KZ</div>
+              <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Reliable · KZ</div>
             </div>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm">
@@ -207,9 +206,9 @@ function Index() {
 
           <div className="mt-10 lg:mt-14 grid md:grid-cols-3 gap-10 items-end">
             <p className="md:col-span-2 text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              ТОО «Reliable Company» и ТОО «BuildEngineeringGroup» — стратегический союз,
-              выполняющий полный цикл проектирования, изысканий, строительно-монтажных работ
-              и экспертизы промышленной безопасности для предприятий Казахстана.
+              ТОО «BuildEngineeringGroup» и ТОО «Reliable Company» — стратегический союз,
+              выполняющий полный цикл строительно-монтажных работ, изысканий,
+              проектирования и экспертизы промышленной безопасности для предприятий Казахстана.
             </p>
             <div className="flex flex-col gap-3">
               <a
@@ -269,7 +268,7 @@ function Index() {
           </div>
           <div className="lg:col-span-7 lg:col-start-6 space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p className="text-foreground text-xl">
-              Мы объединили возможности ТОО «Reliable Company» и ТОО «BuildEngineeringGroup» для предоставления заказчикам комплексных инженерных решений.
+              Мы объединили возможности ТОО «BuildEngineeringGroup» и ТОО «Reliable Company» для предоставления заказчикам комплексных инженерных решений.
             </p>
             <p>
               Компании расположены в одном офисе, обладают всеми государственными лицензиями (включая I категорию проектирования), свидетельством об аккредитации на тех. обследование зданий, современным приборным парком и квалифицированным штатом экспертов.
@@ -390,7 +389,7 @@ function Index() {
       {/* CONTACT */}
       <section id="contact" className="py-24 lg:py-36 relative overflow-hidden">
         <div className="absolute -top-24 right-0 font-display text-[20vw] leading-none text-primary/5 select-none pointer-events-none">
-          Reliable
+          Build Engineering Group
         </div>
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 relative">
           <div className="grid lg:grid-cols-12 gap-12">
@@ -449,16 +448,16 @@ function Index() {
                 <div className="text-xs uppercase tracking-[0.3em] text-primary font-mono">Реквизиты</div>
                 <div className="flex bg-background border border-border p-0.5 rounded text-[10px] uppercase tracking-wider font-mono">
                   <button
-                    onClick={() => setActiveCompany("reliable")}
-                    className={`px-3 py-1.5 transition ${activeCompany === "reliable" ? "bg-primary text-primary-foreground font-semibold" : "text-muted-foreground hover:text-foreground"}`}
-                  >
-                    Reliable
-                  </button>
-                  <button
                     onClick={() => setActiveCompany("buildEngineering")}
                     className={`px-3 py-1.5 transition ${activeCompany === "buildEngineering" ? "bg-primary text-primary-foreground font-semibold" : "text-muted-foreground hover:text-foreground"}`}
                   >
                     BuildEngineering
+                  </button>
+                  <button
+                    onClick={() => setActiveCompany("reliable")}
+                    className={`px-3 py-1.5 transition ${activeCompany === "reliable" ? "bg-primary text-primary-foreground font-semibold" : "text-muted-foreground hover:text-foreground"}`}
+                  >
+                    Reliable
                   </button>
                 </div>
               </div>
@@ -479,7 +478,7 @@ function Index() {
       {/* FOOTER */}
       <footer className="border-t border-border py-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground">
-          <div>© {new Date().getFullYear()} Reliable Company & BuildEngineeringGroup · Karaganda, KZ</div>
+          <div>© {new Date().getFullYear()} Build Engineering Group · Reliable · Karaganda, KZ</div>
           <div>Проектирование · Строительство · Безопасность</div>
         </div>
       </footer>
