@@ -142,8 +142,8 @@ const companyRequisites = {
       ["Телефон", "+7 (705) 916 46 31"],
       ["E-mail", "begroup22@mail.ru"],
       ["НДС", "Плательщик НДС"],
-      ["Проектирование", "Лицензия №22002430 (I категория)"],
       ["СМР", "Лицензия №22002428 (II категория)"],
+      ["Проектирование", "Лицензия №22002430 (I категория)"],
       ["Аккредитация", "Свидетельство №KZ17VWC00272180 (обследование зданий)"],
     ]
   }
@@ -164,7 +164,6 @@ function Index() {
                 <span>Build Engineering</span>
                 <span className="text-primary font-light">Group</span>
               </div>
-              <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Reliable · KZ</div>
             </div>
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm">
@@ -208,7 +207,7 @@ function Index() {
             <p className="md:col-span-2 text-lg text-muted-foreground max-w-2xl leading-relaxed">
               ТОО «BuildEngineeringGroup» и ТОО «Reliable Company» — стратегический союз,
               выполняющий полный цикл строительно-монтажных работ, изысканий,
-              проектирования и экспертизы промышленной безопасности для предприятий Казахстана.
+              экспертизы промышленной безопасности и проектирования для предприятий Казахстана.
             </p>
             <div className="flex flex-col gap-3">
               <a
@@ -275,11 +274,11 @@ function Index() {
             </p>
             <div className="pt-8 grid sm:grid-cols-2 gap-x-8 gap-y-4 border-t border-border">
               {[
-                "Лицензия на проектирование I категории",
-                "Аккредитация на тех. обследование зданий",
-                "Экспертиза промышленной безопасности",
                 "Строительно-монтажные работы",
                 "Инженерно-геологические и геодезические изыскания",
+                "Экспертиза промышленной безопасности",
+                "Лицензия на проектирование I категории",
+                "Аккредитация на тех. обследование зданий",
                 "Обучение и подготовка специалистов по ПБ",
               ].map((f) => (
                 <div key={f} className="flex items-start gap-3 pt-4 text-sm text-foreground">
@@ -305,7 +304,7 @@ function Index() {
               </h2>
             </div>
             <p className="text-muted-foreground max-w-md">
-              От геодезических изысканий и разработки проектов любой сложности до выполнения СМР, технического аудита зданий и обеспечения промышленной безопасности.
+              От выполнения СМР и геодезических изысканий до обеспечения промышленной безопасности, разработки проектов любой сложности и технического аудита зданий.
             </p>
           </div>
 
@@ -409,17 +408,6 @@ function Index() {
                   <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-4">Контакты компаний</div>
                   <div className="grid sm:grid-cols-2 gap-8">
                     <div className="space-y-4">
-                      <div className="text-[10px] uppercase tracking-[0.2em] text-primary font-mono">ТОО «Reliable Company»</div>
-                      <a href="tel:+77789445260" className="block group">
-                        <div className="text-xs text-muted-foreground mb-1">Телефон</div>
-                        <div className="font-display text-2xl group-hover:text-primary transition">+7 (778) 944 52 60</div>
-                      </a>
-                      <a href="mailto:reliable19com@mail.com" className="block group">
-                        <div className="text-xs text-muted-foreground mb-1">E-mail</div>
-                        <div className="font-display text-lg group-hover:text-primary transition break-all">reliable19com@mail.com</div>
-                      </a>
-                    </div>
-                    <div className="space-y-4">
                       <div className="text-[10px] uppercase tracking-[0.2em] text-primary font-mono">ТОО «BuildEngineeringGroup»</div>
                       <a href="tel:+77059164631" className="block group">
                         <div className="text-xs text-muted-foreground mb-1">Телефон</div>
@@ -428,6 +416,17 @@ function Index() {
                       <a href="mailto:begroup22@mail.ru" className="block group">
                         <div className="text-xs text-muted-foreground mb-1">E-mail</div>
                         <div className="font-display text-lg group-hover:text-primary transition break-all">begroup22@mail.ru</div>
+                      </a>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="text-[10px] uppercase tracking-[0.2em] text-primary font-mono">ТОО «Reliable Company»</div>
+                      <a href="tel:+77789445260" className="block group">
+                        <div className="text-xs text-muted-foreground mb-1">Телефон</div>
+                        <div className="font-display text-2xl group-hover:text-primary transition">+7 (778) 944 52 60</div>
+                      </a>
+                      <a href="mailto:reliable19com@mail.com" className="block group">
+                        <div className="text-xs text-muted-foreground mb-1">E-mail</div>
+                        <div className="font-display text-lg group-hover:text-primary transition break-all">reliable19com@mail.com</div>
                       </a>
                     </div>
                   </div>
@@ -479,7 +478,7 @@ function Index() {
       <footer className="border-t border-border py-10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground">
           <div>© {new Date().getFullYear()} Build Engineering Group · Reliable · Karaganda, KZ</div>
-          <div>Проектирование · Строительство · Безопасность</div>
+          <div>Строительство · Изыскания · Безопасность · Проектирование</div>
         </div>
       </footer>
     </div>
