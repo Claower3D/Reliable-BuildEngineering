@@ -150,7 +150,7 @@ const companyRequisites = {
 };
 
 function Index() {
-  const [activeCompany, setActiveCompany] = useState<"reliable" | "buildEngineering" >("buildEngineering");
+  const [activeCompany, setActiveCompany] = useState<"reliable" | "buildEngineering">("buildEngineering");
 
   return (
     <div className="min-h-screen bg-background text-foreground">

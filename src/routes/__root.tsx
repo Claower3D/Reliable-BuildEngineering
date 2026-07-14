@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Reliable Company & BuildEngineeringGroup — Проектирование, Строительство и Безопасность" },
+      { title: "Build Engineering Group & Reliable — Проектирование, Строительство и Безопасность" },
       {
         name: "description",
         content:
-          "ТОО «Reliable Company» и ТОО «BuildEngineeringGroup» (Караганда) — проектирование (I категория), строительно-монтажные работы, техническое обследование зданий, изыскания и экспертиза промышленной безопасности.",
+          "ТОО «BuildEngineeringGroup» и ТОО «Reliable Company» (Караганда) — проектирование (I категория), строительно-монтажные работы, техническое обследование зданий, изыскания и экспертиза промышленной безопасности.",
       },
-      { name: "author", content: "Reliable Company & BuildEngineeringGroup" },
-      { property: "og:title", content: "Reliable Company & BuildEngineeringGroup — Инженерно-строительный альянс" },
+      { name: "author", content: "Build Engineering Group & Reliable" },
+      { property: "og:title", content: "Build Engineering Group & Reliable — Инженерно-строительный альянс" },
       {
         property: "og:description",
         content:
