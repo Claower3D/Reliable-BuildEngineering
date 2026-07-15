@@ -135,7 +135,7 @@ const companyRequisites = {
       ["Наименование", "ТОО «BuildEngineeringGroup»"],
       ["БИН", "070 940 023 915"],
       ["Директор", "Букенов Нурлан Махатович"],
-      ["Юр. адрес", "РК, г. Караганда, ул. Московская, стр. 4, оф. 32"],
+      ["Юр. адрес", "РК, г. Караганда, ул. Московская, стр. 4, оф. 30"],
       ["ИИК", "KZ24 8562 2031 1531 0136"],
       ["Банк", "АО «Банк ЦентрКредит»"],
       ["БИК", "KCJBKZKX"],
@@ -435,7 +435,7 @@ function Index() {
                 <div className="border-t border-b border-border py-6">
                   <div className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">Адрес офиса</div>
                   <div className="font-display text-2xl leading-tight">
-                    г. Караганда, ул. Московская, 4, оф. 32<br />
+                    г. Караганда, ул. Московская, 4, оф. 30<br />
                     <span className="text-muted-foreground text-lg">ТОО «Reliable Company»: мкр. Степной-3, д. 10/1</span>
                   </div>
                 </div>
