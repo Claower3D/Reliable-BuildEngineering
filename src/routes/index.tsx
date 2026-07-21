@@ -307,12 +307,12 @@ function Index() {
                   { title: "Инженерно-геологические и геодезические изыскания" },
                   { title: "Обучение и подготовка специалистов по ПБ" },
                 ].map((f) => (
-                  <div key={f.title} className="flex items-start gap-3 pt-4 text-sm text-foreground">
-                    <span className="text-primary font-mono mt-0.5">✕</span>
-                    <div className="leading-snug">
-                      <span className="font-medium text-[15px]">{f.title}</span>
+                  <div key={f.title} className="flex items-start gap-4 pt-6 text-foreground">
+                    <span className="text-primary font-mono mt-1 text-xl">✕</span>
+                    <div className="leading-snug flex flex-col items-start gap-2.5">
+                      <span className="font-semibold text-[17px] md:text-lg">{f.title}</span>
                       {f.badge && (
-                        <span className="ml-2 inline-flex items-center rounded-sm bg-primary/15 px-2 py-0.5 text-[10px] font-mono font-semibold text-primary uppercase tracking-widest align-middle -mt-0.5 border border-primary/20">
+                        <span className="inline-flex items-center rounded-sm bg-primary/10 px-3 py-1.5 text-xs font-mono font-bold text-primary uppercase tracking-[0.2em] border border-primary/30 shadow-sm">
                           {f.badge}
                         </span>
                       )}
