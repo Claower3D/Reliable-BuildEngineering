@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <rect x="10" y="10" width="20" height="20" rx="3" stroke="#0891B2" stroke-width="2.5"/>
+  <path d="M15 15L25 25M25 15L15 25" stroke="#0891B2" stroke-width="2"/>
+  <text x="36" y="24" font-family="Inter, sans-serif" font-weight="700" font-size="10" fill="#164E63" letter-spacing="0.5">PROJECT TECH</text>
+</svg>

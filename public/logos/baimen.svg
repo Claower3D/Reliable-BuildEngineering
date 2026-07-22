@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <path d="M10 10H22C26.4183 10 30 13.5817 30 18C30 22.4183 26.4183 26 22 26H10V10Z" fill="#D97706"/>
+  <path d="M10 20H24C27.3137 20 30 22.6863 30 26C30 29.3137 27.3137 32 24 32H10V20Z" fill="#B45309"/>
+  <text x="36" y="25" font-family="Inter, sans-serif" font-weight="700" font-size="12" fill="#78350F" letter-spacing="1">БАЙМЕН</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <path d="M10 8H34V14H25V32H19V14H10V8Z" fill="#1E3A8A"/>
+  <path d="M38 8H45L52 24L59 8H66V32H60V16L53 32H51L44 16V32H38V8Z" fill="#1E3A8A"/>
+  <path d="M70 8H92V14L78 26H92V32H70V26L84 14H70V8Z" fill="#2563EB"/>
+  <text x="98" y="25" font-family="Inter, sans-serif" font-weight="700" font-size="12" fill="#0F172A" letter-spacing="1">ТМЗ</text>
+</svg>
